@@ -19,6 +19,7 @@ export const App = () => {
       <p>Stars    : Emraan HashmiShabana AzmiDisha Patani</p>
       <p>See production info at IMDbPro </p>
       </div>
+      
     </div>
   );
 };

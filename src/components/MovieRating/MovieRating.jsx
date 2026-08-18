@@ -1,16 +1,18 @@
 
 import React from 'react';
 
-const MovieRating = () => {
-   return (
+
+const MovieRating = ({moviename,rating,Genre}) => {
+
+  return (
     <div style={{ borderBottom: "1px solid #393737" , margin:"1rem" }}>
       <div>
         <img src="images/movie.jpg" alt="movie" width="20%" height="20%" />
       </div>
 
-      <h1>Awarapan 2</h1>
-
-      <h3>Rating: 7.3/10 </h3>
+      <h1>{moviename}</h1>
+      <h2>Genre: {!Genre ? Genre : 'N/A'}</h2>
+      <h3>Rating: {rating}</h3>
       <div className="details">
         <p>Director : Nitin Kakkar</p>
         <p>Writers  : Vishesh BhattSanjay MasoommBilal Siddiqi</p>

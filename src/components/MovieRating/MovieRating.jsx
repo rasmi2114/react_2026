@@ -1,11 +1,15 @@
 
 import React from 'react';
+let age = 19;
+
+let canWatch = "Not available";
+if( age >= 18) canWatch ="watch Now";
 
 
 const MovieRating = ({moviename,rating,Genre}) => {
 
   return (
-    <div style={{ borderBottom: "1px solid #393737" , margin:"1rem" }}>
+    <div style={{ borderBottom: "1px solid #393737" , margin:"1rem", paddingBottom:"1rem" }}>
       <div>
         <img src="images/movie.jpg" alt="movie" width="20%" height="20%" />
       </div>
@@ -23,11 +27,10 @@ const MovieRating = ({moviename,rating,Genre}) => {
       Sumary : Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. 
        <br />As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.
       </p>
-    </div>
+      <button>{canWatch}</button>
+      {/* <button>{age >= 18 ?"watch now" : "Not available"}</button> */}
+    </div> 
    );
-
 };
-
-
 
 export default MovieRating ;

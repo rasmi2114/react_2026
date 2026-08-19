@@ -2,8 +2,15 @@
 import React from 'react';
 let age = 19;
 
-let canWatch = "Not available";
-if( age >= 18) canWatch ="watch Now";
+// let canWatch = "Not available";
+// if( age >= 18) canWatch ="watch Now";
+
+//call canWatch as function 
+const canWatch = () => {
+ if(age >= 18) "watch Now";
+ return "Not Available";
+}
+
 
 
 const MovieRating = ({moviename,rating,Genre}) => {
@@ -27,8 +34,9 @@ const MovieRating = ({moviename,rating,Genre}) => {
       Sumary : Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. 
        <br />As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.
       </p>
-      <button>{canWatch}</button>
-      {/* <button>{age >= 18 ?"watch now" : "Not available"}</button> */}
+      <button> {canWatch()}</button>    {/*using function  */} 
+      {/* <button>{canWatch}</button> */}  {/* using the declaration  */} 
+      {/* <button>{age >= 18 ?"watch now" : "Not available"}</button> }  {/* using the condition  */ } 
     </div> 
    );
 };

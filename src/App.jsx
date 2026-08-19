@@ -11,9 +11,10 @@ export const App = () => {
     <>
       <Producer/>
      <MovieRating moviename="Awarapan 2" rating="7.6" Genre='Romantic' />
-     <MovieRating moviename="Doglapan 2" rating="9" Genre='Action'/>
-     <MovieRating moviename="Chhinarpan 2" rating="8" Genre='Comedy'/>
-     <MovieRating moviename="Randipan 2" rating="5" />
+     <MovieRating moviename="The End of Oak Street" rating="9" Genre='Action'/>
+     <MovieRating moviename="Batwara 1947" rating="6" Genre='Comedy'/>
+     <MovieRating moviename="The Last House" rating="5" />
     </>
+    
   );
 };

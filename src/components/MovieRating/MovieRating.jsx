@@ -7,7 +7,7 @@ let age = 19;
 
 //call canWatch as function 
 const canWatch = () => {
- if(age >= 18) "watch Now";
+ if(age >= 18) return "watch Now";
  return "Not Available";
 }
 
@@ -31,7 +31,7 @@ const MovieRating = ({moviename,rating,Genre}) => {
         <p>See production info at IMDbPro </p>
       </div>
       <p style={{marginBottom:"1rem" }}>
-      Sumary : Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. 
+      Summary : Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. 
        <br />As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.
       </p>
       <button> {canWatch()}</button>    {/*using function  */} 

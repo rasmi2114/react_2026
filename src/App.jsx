@@ -1,6 +1,4 @@
 // import { Fragment } from "react";
-
-
 import MovieRating from "./components/MovieRating/MovieRating";
 import Producer from "./components/Producer/Producer";
 

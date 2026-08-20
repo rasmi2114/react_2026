@@ -1,0 +1,89 @@
+[
+  {
+    "moviename": "Awarapan 2",
+    "Genre": ["Drama", "Romance", "Action"],
+    "rating": "7.0",
+    "director": "Nitin Kakkar",
+    "writers": ["Sanjay Masoomm", "Bilal Siddiqi"],
+    "stars": ["Emraan Hashmi", "Disha Patani", "Shabana Azmi"],
+    "release_date": "14 August 2026",
+    "summary": "A romantic action drama in which relationships deepen and conflicts intensify, testing the characters' choices and resolve."
+  },
+  {
+    "moviename": "Batwara 1947",
+    "Genre": ["Drama", "History"],
+    "rating": "8.2",
+    "director": "Rajkumar Santoshi",
+    "writers": ["Rajkumar Santoshi", "Asghar Wajahat"],
+    "stars": ["Sunny Deol", "Preity Zinta", "Shabana Azmi"],
+    "release_date": "14 August 2026",
+    "summary": "Set against the violence and upheaval surrounding the Partition of India in 1947, the story follows people struggling to survive a world divided by fear."
+  },
+  {
+    "moviename": "Toxic: A Fairy Tale for Grown-ups",
+    "Genre": ["Action", "Crime", "Drama"],
+    "rating": "6.8",
+    "director": "Geetu Mohandas",
+    "writers": ["Geetu Mohandas", "Yash"],
+    "stars": ["Yash", "Kiara Advani", "Nayanthara"],
+    "release_date": "26 August 2026",
+    "summary": "A period gangster drama centered on a powerful character navigating a dangerous world of crime, ambition and betrayal."
+  },
+  {
+    "moviename": "The Paradise",
+    "Genre": ["Action", "Drama", "Thriller"],
+    "rating": "8.0",
+    "director": "Srikanth Odela",
+    "writers": ["Srikanth Odela", "Thota Srinivas", "Vinay Sagar Jonnala"],
+    "stars": ["Nani", "Sonali Kulkarni", "Mohan Babu"],
+    "release_date": "21 August 2026",
+    "summary": "Set in 1980s Secunderabad, a marginalized community battles discrimination and fights for citizenship under an unexpected leader."
+  },
+  {
+    "moviename": "Khosla Ka Ghosla 2",
+    "Genre": ["Comedy", "Drama"],
+    "rating": "7.5",
+    "director": "Prashant Bhagia",
+    "writers": ["Rajesh Chawla", "Anish Diddee", "Ajay Gahlaut"],
+    "stars": ["Anupam Kher", "Ravi Kishan", "Boman Irani"],
+    "release_date": "28 August 2026",
+    "summary": "The Khosla family gets caught up once again in property disputes, middle-class ambitions and an elaborate con that spirals in unexpected ways."
+  },
+  {
+    "moviename": "Aryabhatt Ka Zero",
+    "Genre": ["Drama"],
+    "rating": "5.0",
+    "director": "Kamal Chandra",
+    "writers": ["Tariq Mohammad"],
+    "stars": ["Himansh Kohli", "Sonnalli Seygall", "Ravi Kishan"],
+    "release_date": "7 August 2026",
+    "summary": "A young man struggling with self-doubt and the pressures of society embarks on a journey of self-discovery and learns the importance of believing in himself."
+  },  {
+    "moviename": "Aryabhatt Ka Zero",
+    "Genre": ["Drama"],
+    "rating": "5.0",
+    "director": "Kamal Chandra",
+    "writers": ["Tariq Mohammad"],
+    "stars": ["Himansh Kohli", "Sonnalli Seygall", "Ravi Kishan"],
+    "release_date": "7 August 2026",
+    "summary": "A young man struggling with self-doubt and the pressures of society embarks on a journey of self-discovery and learns the importance of believing in himself."
+  },  {
+    "moviename": "Aryabhatt Ka Zero",
+    "Genre": ["Drama"],
+    "rating": "5.0",
+    "director": "Kamal Chandra",
+    "writers": ["Tariq Mohammad"],
+    "stars": ["Himansh Kohli", "Sonnalli Seygall", "Ravi Kishan"],
+    "release_date": "7 August 2026",
+    "summary": "A young man struggling with self-doubt and the pressures of society embarks on a journey of self-discovery and learns the importance of believing in himself."
+  },  {
+    "moviename": "Aryabhatt Ka Zero",
+    "Genre": ["Drama"],
+    "rating": "5.0",
+    "director": "Kamal Chandra",
+    "writers": ["Tariq Mohammad"],
+    "stars": ["Himansh Kohli", "Sonnalli Seygall", "Ravi Kishan"],
+    "release_date": "7 August 2026",
+    "summary": "A young man struggling with self-doubt and the pressures of society embarks on a journey of self-discovery and learns the importance of believing in himself."
+  }
+]

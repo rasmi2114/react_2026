@@ -1,5 +1,5 @@
 
-import React from 'react';
+//import React from 'react';
 let age = 19;
 
 // let canWatch = "Not available";

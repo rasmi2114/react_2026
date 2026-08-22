@@ -12,6 +12,7 @@ export const App = () => {
      <MovieRating moviename="The End of Oak Street" rating="9" Genre='Action'/>
      <MovieRating moviename="Batwara 1947" rating="6" Genre='Comedy'/>
      <MovieRating moviename="The Last House" rating="5" />
+      <MovieRating moviename="The Last House" rating="5" />
     </>
     
   );

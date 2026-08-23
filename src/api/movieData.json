@@ -58,5 +58,14 @@
     "stars": ["Himansh Kohli", "Sonnalli Seygall", "Ravi Kishan"],
     "release_date": "7 August 2026",
     "summary": "A young man struggling with self-doubt and the pressures of society embarks on a journey of self-discovery and learns the importance of believing in himself."
+  }, {
+    "moviename": "Aryabhatt Ka Zero",
+    "Genre": ["Drama"],
+    "rating": "5.0",
+    "director": "Kamal Chandra",
+    "writers": ["Tariq Mohammad"],
+    "stars": ["Himansh Kohli", "Sonnalli Seygall", "Ravi Kishan"],
+    "release_date": "7 August 2026",
+    "summary": "A young man struggling with self-doubt and the pressures of society embarks on a journey of self-discovery and learns the importance of believing in himself."
   }
 ]

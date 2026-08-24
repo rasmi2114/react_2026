@@ -1,5 +1,6 @@
 
 //import React from 'react';
+import seriesData from "../../api/movieData.json";
 let age = 19;
 
 // let canWatch = "Not available";
@@ -13,28 +14,29 @@ const canWatch = () => {
 
 
 
-const MovieRating = ({moviename,rating,Genre}) => {
+const MovieRating = () => {
 
   return (
     <div style={{ borderBottom: "1px solid #393737" , margin:"1rem", paddingBottom:"1rem" }}>
       <div>
-        <img src="images/movie.jpg" alt="movie" width="20%" height="20%" />
+        <img src={seriesData[0].img_url} alt="movie" width="20%" height="20%" />
       </div>
 
-      <h1>{moviename}</h1>
-      <h2>Genre: {!Genre ? Genre : 'N/A'}</h2>
-      <h3>Rating: {rating}</h3>
+      <h1>Name:{seriesData[0] .moviename} </h1>
+      <h2>Genre: {seriesData[0] .Genre}</h2>
+      <h3>Rating: {seriesData[0] .rating}</h3>
       <div className="details">
-        <p>Director : Nitin Kakkar</p>
-        <p>Writers  : Vishesh BhattSanjay MasoommBilal Siddiqi</p>
-        <p>Stars    : Emraan HashmiShabana AzmiDisha Patani</p>
-        <p>See production info at IMDbPro </p>
+        <p>Director : {seriesData[0] .director}</p>
+        <p>Writers  : {seriesData[0] .writers}</p>
+        <p>Stars    : {seriesData[0] .stars}</p>
+        <p>Release Date: {seriesData[0] .release_date}</p>
       </div>
       <p style={{marginBottom:"1rem" }}>
-      Summary : Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. 
-       <br />As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.
-      </p>
-      <button> {canWatch()}</button>    {/*using function  */} 
+      Summary : {seriesData[0] .summary} </p>
+      <a href={seriesData[0] .watch_url} target="_blank">
+         <button> {canWatch()}</button>    {/*using function  */} 
+      </a>
+     
       {/* <button>{canWatch}</button> */}  {/* using the declaration  */} 
       {/* <button>{age >= 18 ?"watch now" : "Not available"}</button> }  {/* using the condition  */ } 
     </div> 

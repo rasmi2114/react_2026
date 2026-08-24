@@ -8,10 +8,12 @@ export const App = () => {
     
     <>
       <Producer/>
-     <MovieRating moviename="Awarapan 2" rating="7.6" Genre='Romantic' />
-     <MovieRating moviename="The End of Oak Street" rating="9" Genre='Action'/>
-     <MovieRating moviename="Batwara 1947" rating="6" Genre='Comedy'/>
-     <MovieRating moviename="The Last House" rating="5" />
+      <MovieRating  />
+      <MovieRating  />
+      <MovieRating  />
+      <MovieRating  />
+      <MovieRating  />
+      <MovieRating  />
     </>
     
   );

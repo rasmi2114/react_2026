@@ -9,11 +9,6 @@ export const App = () => {
     <>
       <Producer/>
       <MovieRating  />
-      <MovieRating  />
-      <MovieRating  />
-      <MovieRating  />
-      <MovieRating  />
-      <MovieRating  />
     </>
     
   );

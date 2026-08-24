@@ -17,29 +17,36 @@ const canWatch = () => {
 const MovieRating = () => {
 
   return (
+    <ul>
+      {seriesData.map((curElem) => (
+      <li key={curElem.moviename}>
     <div style={{ borderBottom: "1px solid #393737" , margin:"1rem", paddingBottom:"1rem" }}>
       <div>
-        <img src={seriesData[0].img_url} alt="movie" width="20%" height="20%" />
+        <img src={curElem.img_url} alt="movie" width="20%" height="20%" />
       </div>
 
-      <h1>Name:{seriesData[0] .moviename} </h1>
-      <h2>Genre: {seriesData[0] .Genre}</h2>
-      <h3>Rating: {seriesData[0] .rating}</h3>
+      <h1>Name:{curElem.moviename} </h1>
+      <h2>Genre: {curElem.Genre}</h2>
+      <h3>Rating: {curElem.rating}</h3>
       <div className="details">
-        <p>Director : {seriesData[0] .director}</p>
-        <p>Writers  : {seriesData[0] .writers}</p>
-        <p>Stars    : {seriesData[0] .stars}</p>
-        <p>Release Date: {seriesData[0] .release_date}</p>
+        <p>Director : {curElem.director}</p>
+        <p>Writers  : {curElem.writers}</p>
+        <p>Stars    : {curElem.stars}</p>
+        <p>Release Date: {curElem.release_date}</p>
       </div>
       <p style={{marginBottom:"1rem" }}>
-      Summary : {seriesData[0] .summary} </p>
-      <a href={seriesData[0] .watch_url} target="_blank">
+      Summary : {curElem.summary} </p>
+      <a href={curElem.watch_url} target="_blank">
          <button> {canWatch()}</button>    {/*using function  */} 
       </a>
      
-      {/* <button>{canWatch}</button> */}  {/* using the declaration  */} 
-      {/* <button>{age >= 18 ?"watch now" : "Not available"}</button> }  {/* using the condition  */ } 
+      {/* <button>{canWatch}</button> */}
+      {/* <button>{age >= 18 ? "watch now" : "Not available"}</button> */}
     </div> 
+    </li>
+      ))}
+    </ul>
+      
    );
 };
 

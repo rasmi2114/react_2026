@@ -8,7 +8,7 @@ let age = 19;
 
 //call canWatch as function 
 const canWatch = () => {
- if(age >= 18) return "watch Now";
+ if(age >= 18) return "Watch Now";
  return "Not Available";
 }
 
@@ -27,7 +27,7 @@ const MovieRating = () => {
 
       <h1>Name:{curElem.moviename} </h1>
       <h2>Genre: {curElem.Genre}</h2>
-      <h3>Rating: {curElem.rating}</h3>
+      <p>Rating: {curElem.rating}</p>
       <div className="details">
         <p>Director : {curElem.director}</p>
         <p>Writers  : {curElem.writers}</p>

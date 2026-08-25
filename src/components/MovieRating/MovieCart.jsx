@@ -14,29 +14,27 @@ const canWatch = () => {
 
  return ( 
  
-  <li>
-    <div>
+  <li className="card-li">
       <div>
-        <img src={img_url} alt="movie" width="30%" height="20%" />
+        <img src={img_url} alt="movie" />
       </div>
-
-      <h1>Name:{moviename} </h1>
-      <h2>Genre: {Genre}</h2>
-      <p>Rating: {rating}</p>
-      <div className="details">
-        <p>Director : {director}</p>
-        <p>Writers  : {writers}</p>
-        <p>Stars    : {stars}</p>
-        <p>Release Date: {release_date}</p>
-      </div>
-      <p style={{marginBottom:"1rem" }}>
-      Summary : {summary} </p>
-      <a href= {watch_url} target="_blank">
-         <button> {canWatch()}</button>    {/*using function  */} 
-      </a>
-     
-      {/* <button>{canWatch}</button> */}
-      {/* <button>{age >= 18 ? "watch now" : "Not available"}</button> */}
+      <div className="card-container">
+        <h2>Name:{moviename} </h2>
+        <h3>Genre: {Genre}</h3>
+        <div className="list_details">
+        <p><strong>Rating:</strong> {rating}</p>
+        <p><strong>Director : </strong>{director}</p>
+        <p><strong> Writers  :</strong> {writers}</p>
+        <p><strong>Stars    : </strong>{stars}</p>
+        <p><strong>Release Date:</strong> {release_date}</p>
+        <p><strong> Summary :</strong> {summary} </p>
+        <a href= {watch_url} target="_blank">
+          <button> {canWatch()}</button>    {/*using function  */} 
+        </a>
+        </div>
+      
+        {/* <button>{canWatch}</button> */}
+        {/* <button>{age >= 18 ? "watch now" : "Not available"}</button> */}
     </div> 
  </li>
 );

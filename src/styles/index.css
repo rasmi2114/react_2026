@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -60,22 +60,22 @@ body {
   margin: 1rem;
   /* text-align: center; */
   /* border-inline: 1px solid var(--border); */
-  min-height: 100svh;
+  /* min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 
-}
+/* } */ */
 
 h1,
 h2, h3,h4 {
   color: var(--heading-color);
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   letter-spacing: -1.68px;
   margin: 32px 0;
 
@@ -86,7 +86,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
@@ -98,36 +98,30 @@ h2 {
 
 p {
   margin: 0;
+  font-size: 1rem;
   color: var(--text-h);
 }
 
-code,
+/* code,
 .counter {
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 4px;
   color: var(--text-h);
-}
+} */
 
-code {
+/* code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+} */
 
-button {
-  background-color: #9ca3af;
-  border-radius: 8px;
-  width: 10rem;
-  height: 2rem;
-  font-size: 17px;
-}
 
 .container {
   max-width: 142rem;
   margin:0 auto;
-  padding: 9.6rem 2.4rem;
+  padding: 2rem;
 }
 
 .grid {

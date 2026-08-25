@@ -13,18 +13,6 @@
     "watch_url":"https://yomovies.energy/"
   },
   {
-    "img_url": "/images/batwara.jpg",
-    "moviename": "Batwara 1947",
-    "Genre": ["Drama", "History"],
-    "rating": "8.2",
-    "director": "Rajkumar Santoshi",
-    "writers": ["Rajkumar Santoshi", "Asghar Wajahat"],
-    "stars": ["Sunny Deol", "Preity Zinta", "Shabana Azmi"],
-    "release_date": "14 August 2026",
-    "summary": "Set against the violence and upheaval surrounding the Partition of India in 1947, the story follows people struggling to survive a world divided by fear.",
-    "watch_url":"https://yomovies.energy/"
-  },
-  {
     "img_url": "/images/toxic.jpg",
     "moviename": "Toxic",
     "Genre": ["Action", "Crime", "Drama"],
@@ -46,6 +34,18 @@
     "stars": ["Nani", "Sonali Kulkarni", "Mohan Babu"],
     "release_date": "21 August 2026",
     "summary": "Set in 1980s Secunderabad, a marginalized community battles discrimination and fights for citizenship under an unexpected leader.",
+    "watch_url":"https://yomovies.energy/"
+  },
+   {
+    "img_url": "/images/batwara.jpg",
+    "moviename": "Batwara 1947",
+    "Genre": ["Drama", "History"],
+    "rating": "8.2",
+    "director": "Rajkumar Santoshi",
+    "writers": ["Rajkumar Santoshi", "Asghar Wajahat"],
+    "stars": ["Sunny Deol", "Preity Zinta", "Shabana Azmi"],
+    "release_date": "14 August 2026",
+    "summary": "Set against the violence and upheaval surrounding the Partition of India in 1947, the story follows people struggling to survive a world divided by fear.",
     "watch_url":"https://yomovies.energy/"
   },
   {

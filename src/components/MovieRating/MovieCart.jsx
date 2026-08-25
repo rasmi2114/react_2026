@@ -12,6 +12,8 @@ const canWatch = () => {
  return "Not Available";
 }
 
+const raiting = rating >= 8.0 ? "super-hit" : "average";
+
  return ( 
  
   <li className="card-li">
@@ -21,7 +23,7 @@ const canWatch = () => {
       <div className="card-container">
         <h2>Name:{moviename} </h2>
         <h3>Genre: {Genre}</h3>
-        <p><strong>Rating:</strong> {rating}</p>
+        <p className="rating-col">Rating:<span className={`rating ${raiting}`}> {rating} </span></p>
         <p><strong>Director : </strong>{director}</p>
         <p><strong> Writers  :</strong> {writers}</p>
         <p><strong>Stars    : </strong>{stars}</p>

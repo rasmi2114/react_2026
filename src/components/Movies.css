@@ -16,14 +16,34 @@
 img{
     width: 100%;
 }
-
+.super-hit {
+    background-color: #7bcea0;
+}
+.rating-col {
+ color: #7bcea0;
+ font-weight: 900;
+}
+.average {
+    background-color: #f7dc6f;
+}
+.rating {
+    padding: 0.3rem 1.9rem;
+    color: #000;
+    margin-left: 1.2rem;
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+}
 button {
-  background-color: #9ca3af;
   border-radius: 8px;
-  width: 10rem;
-  height: 2.9rem;
-  font-size: 17px;
+  /* width: 10rem;
+  height: 2.9rem; */
+  font-size: 14px;
   margin-top: 2rem;
-  padding: .8rem;
   text-align: center;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #7589ed;
 }

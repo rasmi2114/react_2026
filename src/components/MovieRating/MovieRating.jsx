@@ -6,7 +6,7 @@ import {MovieCart} from "./MovieCart";
 const MovieRating = () => {
 
   return (
-    <ul>
+    <ul className=" grid grid-three-cols">
       {seriesData.map((curElem) => (
         <MovieCart key= {curElem.id} data= {curElem}/>       
       ))} 

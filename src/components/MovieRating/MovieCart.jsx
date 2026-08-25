@@ -15,7 +15,7 @@ const canWatch = () => {
  return ( 
  
   <li>
-    <div style={{ borderBottom: "1px solid #393737" , margin:"1rem", paddingBottom:"1rem" }}>
+    <div>
       <div>
         <img src={img_url} alt="movie" width="30%" height="20%" />
       </div>

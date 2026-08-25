@@ -21,7 +21,6 @@ const canWatch = () => {
       <div className="card-container">
         <h2>Name:{moviename} </h2>
         <h3>Genre: {Genre}</h3>
-        <div className="list_details">
         <p><strong>Rating:</strong> {rating}</p>
         <p><strong>Director : </strong>{director}</p>
         <p><strong> Writers  :</strong> {writers}</p>
@@ -31,8 +30,6 @@ const canWatch = () => {
         <a href= {watch_url} target="_blank">
           <button> {canWatch()}</button>    {/*using function  */} 
         </a>
-        </div>
-      
         {/* <button>{canWatch}</button> */}
         {/* <button>{age >= 18 ? "watch now" : "Not available"}</button> */}
     </div> 

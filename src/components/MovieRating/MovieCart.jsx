@@ -36,5 +36,5 @@ const raiting = rating >= 8.0 ? "super-hit" : "average";
         {/* <button>{age >= 18 ? "watch now" : "Not available"}</button> */}
     </div> 
  </li>
-);
+ );
 }

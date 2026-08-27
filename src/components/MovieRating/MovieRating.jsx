@@ -10,8 +10,7 @@ const MovieRating = () => {
       {seriesData.map((curElem) => (
         <MovieCart key= {curElem.id} data= {curElem}/>       
       ))} 
-    </ul>
-    
+    </ul> 
   );
 };
 

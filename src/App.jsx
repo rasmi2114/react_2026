@@ -1,6 +1,6 @@
 // import { Fragment } from "react";
 import MovieRating from "./components/MovieRating/MovieRating";
-import "./components/Movies.css"
+import "./components/MovieRating/Movies.css"
 
 export const App = () => {
   //const type="Romantic";

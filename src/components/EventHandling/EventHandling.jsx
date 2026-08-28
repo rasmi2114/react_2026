@@ -1,11 +1,17 @@
 import "../EventHandling/EventHandling.css";
 
-function handleButtonClick() {
-    alert("Hi, Im on button click evenet");
 
-}
+export const EventHandling = () => {
+    // function handleButtonClick() {
+    //     alert("Hi, I am on button click event");
+    // }
 
-export const EventHandling =() => {
+    //another method 
+      const handleButtonClick = (event) => {
+        console.log(event);
+        alert("Hi, I am on button click event");
+      };
+
     return(
         <>
         <button onClick={handleButtonClick}>Click me</button>

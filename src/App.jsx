@@ -1,8 +1,9 @@
 // import { Fragment } from "react";
 // import { EventHandling } from "./components/EventHandling/EventHandling";
 // import MovieRating from "./components/MovieRating/MovieRating";
-import { EventProps } from "./components/EventHandling/Eventprops";
+// import { EventProps } from "./components/EventHandling/Eventprops";
 
+import { EventPropagation } from "./components/EventHandling/EventPropagation";
 import "./components/MovieRating/Movies.css"
 
 export const App = () => {
@@ -12,7 +13,8 @@ export const App = () => {
       {/* <h1 className="card-heading">List Of Upcoming Released Movies</h1> */}
       {/* <MovieRating  /> */}
       {/* <EventHandling /> */}
-      <EventProps/>
+      {/* <EventProps/> */}
+      < EventPropagation />
     </section>
     
   );

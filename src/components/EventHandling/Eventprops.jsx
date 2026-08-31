@@ -17,11 +17,15 @@ export const EventProps = () => {
     );
 };
 const WelcomeUser = (props) => {
+    const handleGreeting = () => {
+        console.log(`Hey User, Good Morning`);
+    }
+    
     return (
         <>
             <button onClick={props.onClick}>Click</button>
             <button onMouseEnter={props.onMouseEnter}>Hover me</button>
-            <button>Greeting</button>
+            <button onClick={handleGreeting}>Greeting</button>
         </>
     );
 };

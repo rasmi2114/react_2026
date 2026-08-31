@@ -10,21 +10,23 @@ export const EventProps = () => {
     return (
         <>
             <WelcomeUser
-                onClick={() => HandleWelcomeUser("vinod")}
+                onClick={() => HandleWelcomeUser("Rashmi")}
                 onMouseEnter={handleHover}
             />
         </>
     );
 };
 const WelcomeUser = (props) => {
+    const { onClick, onMouseEnter } = props;
     const handleGreeting = () => {
         console.log(`Hey User, Good Morning`);
-    }
-    
+        onClick();
+    };
+
     return (
         <>
-            <button onClick={props.onClick}>Click</button>
-            <button onMouseEnter={props.onMouseEnter}>Hover me</button>
+            <button onClick={onClick}>Click</button>
+            <button onMouseEnter={onMouseEnter}>Hover me</button>
             <button onClick={handleGreeting}>Greeting</button>
         </>
     );

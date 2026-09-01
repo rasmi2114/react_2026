@@ -1,10 +1,11 @@
+import "./components/MovieRating/Movies.css"
+import { State } from "./components/hooks/State";
 // import { Fragment } from "react";
 // import { EventHandling } from "./components/EventHandling/EventHandling";
 // import MovieRating from "./components/MovieRating/MovieRating";
 // import { EventProps } from "./components/EventHandling/Eventprops";
+// import { EventPropagation } from "./components/EventHandling/EventPropagation";
 
-import { EventPropagation } from "./components/EventHandling/EventPropagation";
-import "./components/MovieRating/Movies.css"
 
 export const App = () => {
   //const type="Romantic";
@@ -14,7 +15,8 @@ export const App = () => {
       {/* <MovieRating  /> */}
       {/* <EventHandling /> */}
       {/* <EventProps/> */}
-      < EventPropagation />
+      {/* < EventPropagation /> */}
+      < State/>
     </section>
     
   );

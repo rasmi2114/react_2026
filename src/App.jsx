@@ -1,5 +1,6 @@
 import "./components/MovieRating/Movies.css"
-import { State } from "./components/hooks/State";
+import { LiftingState } from "./components/hooks/LiftStateUp";
+// import { State } from "./components/hooks/State";
 // import { Fragment } from "react";
 // import { EventHandling } from "./components/EventHandling/EventHandling";
 // import MovieRating from "./components/MovieRating/MovieRating";
@@ -16,7 +17,8 @@ export const App = () => {
       {/* <EventHandling /> */}
       {/* <EventProps/> */}
       {/* < EventPropagation /> */}
-      < State/>
+      {/* < State/> */}
+      <LiftingState />
     </section>
     
   );

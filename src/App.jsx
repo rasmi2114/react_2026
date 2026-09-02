@@ -1,5 +1,6 @@
 import "./components/MovieRating/Movies.css"
-import { LiftingState } from "./components/hooks/LiftStateUp";
+import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwtich";
+
 // import { State } from "./components/hooks/State";
 // import { Fragment } from "react";
 // import { EventHandling } from "./components/EventHandling/EventHandling";
@@ -18,7 +19,8 @@ export const App = () => {
       {/* <EventProps/> */}
       {/* < EventPropagation /> */}
       {/* < State/> */}
-      <LiftingState />
+      {/* <LiftingState /> */}
+      <ToggleSwitch />
     </section>
     
   );

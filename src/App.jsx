@@ -1,6 +1,6 @@
-import "./components/MovieRating/Movies.css"
-import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwtich";
-
+import { Todo } from "./projects/ToDoApp/Todo";
+import "./projects/ToDoApp/todo.css";
+// import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwtich";
 // import { State } from "./components/hooks/State";
 // import { Fragment } from "react";
 // import { EventHandling } from "./components/EventHandling/EventHandling";
@@ -20,7 +20,8 @@ export const App = () => {
       {/* < EventPropagation /> */}
       {/* < State/> */}
       {/* <LiftingState /> */}
-      <ToggleSwitch />
+      {/* <ToggleSwitch /> */}
+      <Todo/>
     </section>
     
   );

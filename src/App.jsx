@@ -1,4 +1,5 @@
-import { Todo } from "./projects/ToDoApp/Todo";
+import { DarkMode } from "./projects/DarkMode/darkMode";
+//import { Todo } from "./projects/ToDoApp/Todo";
 import "./projects/ToDoApp/todo.css";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwtich";
 // import { State } from "./components/hooks/State";
@@ -21,7 +22,8 @@ export const App = () => {
       {/* < State/> */}
       {/* <LiftingState /> */}
       {/* <ToggleSwitch /> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <DarkMode/>
     </section>
     
   );

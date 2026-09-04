@@ -43,6 +43,11 @@ export const Todo =() => {
             const updatetask = task.filter((curTask) => curTask !== value);
             setTasks(updatetask);   
         }
+
+    // handelClearTodoData funation
+    const handelClearTodoData = () => {
+        setTasks([]);
+    }
   
     return (
         <section className ="todo-container">
@@ -79,6 +84,9 @@ export const Todo =() => {
                             );
                         })}
                     </ul>
+            </section>
+            <section className="clear-btn" onClick={handelClearTodoData}>
+                Clear all
             </section>
         </section>
       

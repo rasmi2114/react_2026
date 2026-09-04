@@ -1,4 +1,4 @@
-import { DarkMode } from "./projects/DarkMode/darkMode";
+import { DarkMode } from "./projects/DarkMode/DarkMode";
 //import { Todo } from "./projects/ToDoApp/Todo";
 import "./projects/ToDoApp/todo.css";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwtich";

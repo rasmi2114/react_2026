@@ -1,26 +1,23 @@
-import {  useEffect, useState } from "react";  
+import { useState } from "react";  
 
 export const DarkMode =() => {
 
   const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    console.log("Dark mode:", darkMode);
-  }, [darkMode]);
-
-  const handleDarkMode = () => {
-    //setDarkMode((isDarkMode) => !isDarkMode);
-    if(darkMode) {
-      setDarkMode(false);
-    } else {
-      setDarkMode(true);
-    }
-  };
-
-  return (
-    <div style={{ backgroundColor: darkMode ? "black" : "white" }}>
-      <button onClick={handleDarkMode}>
-        Black Background
+    return (
+    <div
+      style={{
+        backgroundColor: darkMode ? "black" : "white",
+        color: darkMode ? "white" : "black",
+        minHeight: "100vh",
+      }}
+    >
+      <button
+        type="button"
+        aria-pressed={darkMode}
+        onClick={() => setDarkMode((prev) => !prev)}
+      >
+        {darkMode ? "Switch to light mode" : "Switch to dark mode"}
       </button>
     </div>
   );

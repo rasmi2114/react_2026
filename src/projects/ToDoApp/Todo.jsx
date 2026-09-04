@@ -37,6 +37,12 @@ export const Todo =() => {
 
        return () => clearInterval(interval);
     }, []);
+
+    //todo handelDeleteTodo function 
+        const handelDeleteTodo = (value) => {
+            const updatetask = task.filter((curTask) => curTask !== value);
+            setTasks(updatetask);   
+        }
   
     return (
         <section className ="todo-container">
@@ -47,7 +53,7 @@ export const Todo =() => {
             <section className ="form">
                 <form onSubmit={handelFormSubmit}>
                     <div>
-                        <input type="text" classname="todo-input" autoComplete="off" 
+                        <input type="text" className="todo-input" autoComplete="off" 
                         value={inputValue} 
                         onChange={(event) => handleInputChange (event.target.value)}/>
                     </div>
@@ -57,7 +63,7 @@ export const Todo =() => {
                 </form>
 
             </section>
-            <section classname="myOrderList">
+            <section className="myOrderList">
                     <ul>
                         {task.map((curTask, index) => {
                             return (
@@ -66,7 +72,7 @@ export const Todo =() => {
                                     <button className="check-btn">
                                         <MdCheck />
                                     </button>
-                                    <button className="delete-btn">
+                                    <button className="delete-btn" onClick={() => handelDeleteTodo(curTask)}>
                                         <MdDeleteForever />
                                     </button>
                                 </li>

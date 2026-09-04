@@ -1,6 +1,6 @@
-import { DarkMode } from "./projects/DarkMode/DarkMode";
-//import { Todo } from "./projects/ToDoApp/Todo";
+
 import "./projects/ToDoApp/todo.css";
+import { Todo } from "./projects/ToDoApp/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwtich";
 // import { State } from "./components/hooks/State";
 // import { Fragment } from "react";
@@ -22,8 +22,8 @@ export const App = () => {
       {/* < State/> */}
       {/* <LiftingState /> */}
       {/* <ToggleSwitch /> */}
-      {/* <Todo/> */}
-      <DarkMode/>
+      {/* <DarkMode /> */}
+      <Todo/>
     </section>
     
   );

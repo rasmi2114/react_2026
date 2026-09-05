@@ -40,7 +40,9 @@ export const Todo = () => {
   const handleClearTodoData = () => {
     setTask([]);
   };
-
+  const girlname = () =>{
+    console.log("ladki", 'Rashmi');
+  }
   //todo handleCheckedTodo functionality
   const handleCheckedTodo = (content) => {
     const updatedTask = task.map((curTask) => {
@@ -60,7 +62,7 @@ export const Todo = () => {
         <TodoDate />
       </header>
 
-      <TodoForm onAddTodo={handleFormSubmit} />
+      <TodoForm onAddTodo={handleFormSubmit} callingGirlname={girlname} />
 
       <section className="myUnOrdList">
         <ul>

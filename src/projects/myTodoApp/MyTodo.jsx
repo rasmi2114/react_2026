@@ -1,18 +1,35 @@
 import { useState } from "react";
-import { MyTodoForm } from "./MyTodoForm/MyTodoForm";
+import { Count } from "./CounterProject/Count/Count";
+import { CounterButton } from "./CounterProject/Countbutton/Counterbutton";
+
 
 const MyTodo = () => {
-    const formNameDefault = "India";
-    const [formName, setFormName] = useState(formNameDefault);
-    const changeAppName = () => {
-        setFormName("My Todo App Updated");
+    const [count, setCount] = useState(0);
+
+    const incrementCount =() =>{
+        setCount((prev) => prev+1)
+        if (count >= 10) {
+            alert("Count cannot exceed 10");
+            setCount(10);
+        }
     }
-    const changeMyName = (arg) => {
-        console.log(arg + " is my country");
+
+    const decrementCount =() => {
+        setCount((prev) => prev-1)
+        if (count <= 0) {
+            alert("Count cannot be negative");
+            setCount(0);
+        } 
     }
+
+    const resetCount =() => {
+        setCount(0);
+    }
+
     return (
         <>
-        <MyTodoForm formName={formName} formNameChange={changeAppName} changeMyname={changeMyName} />
+        <Count defaultCount={count}/>
+        <CounterButton inc={incrementCount} decr={decrementCount} reset={resetCount} count={count}/>
         </>
     )
 }

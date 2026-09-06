@@ -8,23 +8,18 @@ const MyTodo = () => {
     const [inputValue, setInputValue] = useState(1);
 
     const incrementCount =() =>{
-        setCount((prev) => prev+parseInt(inputValue))
-        if (count >= 10) {
-            setCount(10);
-        }
+        setCount((prev) => prev + parseInt(inputValue))
     }
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     }
     const decrementCount =() => {
-        setCount((prev) => Math.max(0, prev - parseInt(inputValue, 10)))
+        setCount((prev) => Math.max(0, prev - parseInt(inputValue)))
     }
 
     const resetCount =() => {
         setCount(0);
     }
-
-
 
     return (
         <>

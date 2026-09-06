@@ -1,6 +1,6 @@
-export const Count = ({defaultCount}) => {
+export const Count = ({defaultCount,bgcolor}) => {
     return (
-        <div>
+        <div style={{ backgroundColor: bgcolor }}>
             <p> {defaultCount} </p>
         </div>
     );

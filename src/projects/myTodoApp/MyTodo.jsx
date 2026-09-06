@@ -5,33 +5,34 @@ import { CounterButton } from "./CounterProject/Countbutton/Counterbutton";
 
 const MyTodo = () => {
     const [count, setCount] = useState(0);
+    const [inputValue, setInputValue] = useState(1);
 
     const incrementCount =() =>{
-        setCount((prev) => prev+1)
+        setCount((prev) => prev+parseInt(inputValue))
         if (count >= 10) {
-            alert("Count cannot exceed 10");
             setCount(10);
         }
     }
-
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    }
     const decrementCount =() => {
-        setCount((prev) => prev-1)
-        if (count <= 0) {
-            alert("Count cannot be negative");
-            setCount(0);
-        } 
+        setCount((prev) => Math.max(0, prev - parseInt(inputValue, 10)))
     }
 
     const resetCount =() => {
         setCount(0);
     }
 
+
+
     return (
         <>
-        <Count defaultCount={count}/>
+        <Count defaultCount={count} bgcolor="lightgray"/><br/>
+        <input type="text" value={inputValue} onChange={handleInputChange} />&nbsp;
         <CounterButton inc={incrementCount} decr={decrementCount} reset={resetCount} count={count}/>
         </>
     )
-}
+};
 
 export default MyTodo;

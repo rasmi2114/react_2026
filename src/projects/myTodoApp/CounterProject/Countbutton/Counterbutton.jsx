@@ -9,7 +9,7 @@ export const CounterButton = ({inc,decr,reset,count}) => {
             Reset
         </button>
         &nbsp;
-        <button onClick={inc} disabled={count >= 10}>
+        <button onClick={inc}>
             +
         </button>
         </>

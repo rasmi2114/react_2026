@@ -13,7 +13,6 @@ export const TodoForm = ({ onAddTodo, callingGirlname }) => {
     setInputValue({ id: "", content: "", checked: false });
   };
   useEffect(() => {
-    console.log("ladki", ladki);
   }, []);
   return (
     <section className="form">
@@ -30,13 +29,6 @@ export const TodoForm = ({ onAddTodo, callingGirlname }) => {
         <div>
           <button type="submit" className="todo-btn">
             Add Task
-          </button>
-          <button
-            type="button"
-            className="todo-btn"
-            onClick={callingGirlname}
-          >
-            Call Girl Name
           </button>
         </div>
       </form>

@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 
-export const TodoForm = ({ onAddTodo, callingGirlname }) => {
+export const TodoForm = ({ onAddTodo }) => {
   const [inputValue, setInputValue] = useState({});
 
   const handleInputChange = (value) => {

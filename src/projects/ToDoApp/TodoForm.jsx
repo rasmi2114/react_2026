@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
+import { TodoFilter } from "./TodoFilter";
 
-export const TodoForm = ({ onAddTodo }) => {
+export const TodoForm = ({ onAddTodo, activeFilter, onFilterChange }) => {
   const [inputValue, setInputValue] = useState({});
 
   const handleInputChange = (value) => {
@@ -15,6 +16,7 @@ export const TodoForm = ({ onAddTodo }) => {
   useEffect(() => {
   }, []);
   return (
+    <div className="form-container">
     <section className="form">
       <form onSubmit={handleFormSubmit}>
         <div>
@@ -31,7 +33,13 @@ export const TodoForm = ({ onAddTodo }) => {
             Add Task
           </button>
         </div>
+        
       </form>
     </section>
+     <TodoFilter
+       activeFilter={activeFilter}
+       onFilterChange={onFilterChange}
+     />
+     </div>
   );
 };

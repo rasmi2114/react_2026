@@ -10,6 +10,7 @@ import {
 
 export const Todo = () => {
   const [task, setTask] = useState(() => getLocalStorageTodoData());
+  const [activeFilter, setActiveFilter] = useState("all");
 
   const handleFormSubmit = (inputValue) => {
     const { id, content, checked } = inputValue;
@@ -26,7 +27,7 @@ export const Todo = () => {
 
     setTask((prevTask) => [...prevTask, { id, content, checked }]);
   };
-  const myList = ['book', 'pen', 'pencil', 'eraser', 'sharpener'];
+
   //todo add data to localStorage
   setLocalStorageTodoData(task);
 
@@ -53,18 +54,27 @@ export const Todo = () => {
     setTask(updatedTask);
   };
 
+  const filteredTask = task.filter((curTask) => {
+    if (activeFilter === "checked") return curTask.checked;
+    if (activeFilter === "unchecked") return !curTask.checked;
+    return true;
+  });
+
   return (
     <section className="todo-container">
       <header>
         <h1>Todo List</h1>
         <TodoDate />
       </header>
-
-      <TodoForm onAddTodo={handleFormSubmit}/>
-
+      <TodoForm
+        onAddTodo={handleFormSubmit}
+        activeFilter={activeFilter}
+        onFilterChange={setActiveFilter}
+      />
+  
       <section className="myUnOrdList">
         <ul>
-          {task.map((curTask) => {
+          {filteredTask.map((curTask) => {
             return (
               <TodoList
                 key={curTask.id}
@@ -82,13 +92,7 @@ export const Todo = () => {
           Clear all
         </button>
       </section>
-      <ul>
-        {myList
-          .filter((item) => item !== "pencil")
-          .map((item,index) => (
-            <li key={index}>{item}</li>
-          ))}
-      </ul>
+   
     </section>
   );
 };

@@ -26,7 +26,7 @@ export const Todo = () => {
 
     setTask((prevTask) => [...prevTask, { id, content, checked }]);
   };
-
+  const myList = ['book', 'pen', 'pencil', 'eraser', 'sharpener'];
   //todo add data to localStorage
   setLocalStorageTodoData(task);
 
@@ -82,6 +82,13 @@ export const Todo = () => {
           Clear all
         </button>
       </section>
+      <ul>
+        {myList
+          .filter((item) => item !== "pencil")
+          .map((item,index) => (
+            <li key={index}>{item}</li>
+          ))}
+      </ul>
     </section>
   );
 };

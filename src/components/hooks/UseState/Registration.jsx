@@ -22,7 +22,7 @@ export  const Registration = () => {
     return (
         <>
         <form onSubmit={handelFormSubmit}>
-            <div className="container-reg">
+            <div className="reg-container">
                 <h1>Sign Up</h1>
                   <p>Please fill in this form to create an account.</p>
 

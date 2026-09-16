@@ -6,7 +6,7 @@ export const Pokemon = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API = "https://pokeapi.co/api/v2/pokemon/pikachu";
+  const API = "https://pokeapi.co/api/v2/pokemon?limit=24";
 
   //   const fetchPokemon = () => {
   //     fetch(API)
@@ -77,6 +77,17 @@ export const Pokemon = () => {
             </p>
             <p className="pokemon-info">
               Weight: <span> {pokemon.weight}</span>
+            </p>
+            <p className="pokemon-info">
+              speed: <span>{pokemon.stats[5].base_stat}</span>
+            </p>
+          </div>
+          <div className="grid-three-cols">
+            <p className="pokemon-info">
+              experience: <span> {pokemon.experience} </span>
+            </p>
+            <p className="pokemon-info">
+              attack: <span> {pokemon.attack}</span>
             </p>
             <p className="pokemon-info">
               speed: <span>{pokemon.stats[5].base_stat}</span>

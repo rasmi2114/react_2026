@@ -1,14 +1,41 @@
 
-import MyTodo from "./projects/myTodoApp/MyTodo";
-import "./projects/myTodoApp/myTodo.css";
+// import MyTodo from "./projects/myTodoApp/MyTodo";
+// import "./projects/myTodoApp/myTodo.css";
+// import { Todo } from "./projects/ToDoApp/Todo";
+// import "./components/hooks/ShortCircuit";
+// import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
+
+
+import { Pokemon } from "./components/hooks/UseEffect/Pokemon";
+import './components/hooks/UseEffect/Pokemon.css';
+// import { Clock } from "./components/hooks/UseEffect/Clock";
+// import './components/hooks/UseEffect/useEffect.css';
+
+
+// import {Registration} from "./components/hooks/UseState/Registration";
+// import {LoginForm} from "./components/hooks/UseState/LoginForm";
+// import { ContactForm} from "./components/hooks/UseState/ContactForm";
+// import './components/hooks/UseState/index.css';
+
+
 
 export const App = () => {
   //const type="Romantic";
   return (
-    < section className="container">
-      <MyTodo />
-    </section>
-    
+    // < section className="container">
+    //   <MyTodo /> */}
+    //   {/* <Todo/> */}
+    //   {/* <ShortCircuit/>
+    // </section>
+
+    <>
+    //  {/* <Registration /> */}
+    //  {/* <LoginForm/> */}
+    //  {/* <ContactForm/> */}
+    {/* <Clock /> */}
+    <Pokemon/>
+    </>
+  
   );
 };

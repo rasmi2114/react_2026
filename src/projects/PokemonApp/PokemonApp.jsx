@@ -9,7 +9,6 @@ export const PokemonApp = () => {
   const [search, setSearch] = useState("");
 
   const API = "https://pokeapi.co/api/v2/pokemon?limit=124";
-  // subscribe to thapa technical youtube channel: https://www.youtube.com/thapatechnical
 
   const fetchPokemon = async () => {
     try {
@@ -44,6 +43,7 @@ export const PokemonApp = () => {
     curPokemon.name.toLowerCase().includes(search.toLowerCase())
   );
 
+  //loading
   if (loading) {
     return (
       <div>
@@ -52,6 +52,7 @@ export const PokemonApp = () => {
     );
   }
 
+  //error
   if (error) {
     return (
       <div>

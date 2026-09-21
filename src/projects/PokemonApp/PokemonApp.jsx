@@ -40,7 +40,6 @@ export const PokemonApp = () => {
   }, []);
 
   //search functionality
-
   const searchData = pokemon.filter((curPokemon) =>
     curPokemon.name.toLowerCase().includes(search.toLowerCase())
   );

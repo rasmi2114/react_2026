@@ -6,9 +6,10 @@
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
+import { MyUseId } from "./components/hooks/UseID/MyUseId";
 
-import { Pokemon } from "./components/hooks/UseEffect/Pokemon";
-import './components/hooks/UseEffect/Pokemon.css';
+// import './components/hooks/UseEffect/Pokemon.css';
+// import { PokemonApp } from './projects/PokemonApp/PokemonApp';
 // import { Clock } from "./components/hooks/UseEffect/Clock";
 // import './components/hooks/UseEffect/useEffect.css';
 
@@ -20,22 +21,14 @@ import './components/hooks/UseEffect/Pokemon.css';
 
 
 
+
+
 export const App = () => {
   //const type="Romantic";
   return (
-    // < section className="container">
-    //   <MyTodo /> */}
-    //   {/* <Todo/> */}
-    //   {/* <ShortCircuit/>
-    // </section>
-
-    <>
-    //  {/* <Registration /> */}
-    //  {/* <LoginForm/> */}
-    //  {/* <ContactForm/> */}
-    {/* <Clock /> */}
-    <Pokemon/>
-    </>
+   <>
+<MyUseId/>
+  </>
   
   );
 };

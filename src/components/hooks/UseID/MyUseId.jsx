@@ -22,4 +22,26 @@ export const MyUseId = () => {
         <button type="submit">Submit</button>
       </form>
     );
+
+    // In case of multiple input field in a form use single element that needs a unique ID.
+
+      // const id = useId();
+
+    // return (
+    //   <form>
+    //     <div>
+    //       <label htmlFor={id + "usernameId"}> Username: </label>
+    //       <input type="text" id={id + "usernameId"} name="name" />
+    //     </div>
+    //     <div>
+    //       <label htmlFor={id + "passwordId"}> Password: </label>
+    //       <input type="password" id={id + "passwordId"} name="password" />
+    //     </div>
+    //     <div>
+    //       <label htmlFor={id + "emailId"}>Email:</label>
+    //       <input type="email" id={id + "emailId"} name="email" />
+    //     </div>
+    //     <button type="submit">Submit</button>
+    //   </form>
+    // );
 };

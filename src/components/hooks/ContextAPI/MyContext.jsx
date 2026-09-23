@@ -6,7 +6,8 @@ export const MyContext = createContext();
 //2nd step
 export const MyProvider = ({children}) => {
     const myName ="Rashmi";
-    return <MyContext.Provider value={{myName}}>{children}
+    const myage = 42;
+    return <MyContext.Provider value={{myName, myage}}>{children}
         
     </MyContext.Provider>
 

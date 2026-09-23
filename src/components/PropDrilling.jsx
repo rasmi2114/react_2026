@@ -1,4 +1,4 @@
-export const ParentComponent  = () => {
+export const PropDrilling  = () => {
      return (
     <section>
       <h1>Component A</h1>

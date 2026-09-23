@@ -6,7 +6,9 @@
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
-import { MyUseId } from "./components/hooks/UseID/MyUseId";
+import { Home } from "./components/hooks/ContextAPI/Home";
+import { MyProvider } from "./components/hooks/ContextAPI/MyContext";
+
 
 // import './components/hooks/UseEffect/Pokemon.css';
 // import { PokemonApp } from './projects/PokemonApp/PokemonApp';
@@ -27,8 +29,9 @@ export const App = () => {
   //const type="Romantic";
   return (
    <>
-<MyUseId/>
+ <MyProvider>
+<Home/>
+ </MyProvider>
   </>
-  
   );
 };

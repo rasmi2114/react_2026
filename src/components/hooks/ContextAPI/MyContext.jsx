@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, use } from "react";
 
 //1 step
 export const MyContext = createContext();
@@ -16,6 +16,6 @@ export const MyProvider = ({children}) => {
 
 //Custome hooks
  export const useMyContext = () => {
-    const contex = useMyContext(MyContext);
+    const contex = use(MyContext);
     return contex;
  }

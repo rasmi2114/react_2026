@@ -6,6 +6,7 @@
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
+import { About } from "./components/hooks/ContextAPI/about";
 import { Home } from "./components/hooks/ContextAPI/Home";
 import { MyProvider } from "./components/hooks/ContextAPI/MyContext";
 
@@ -29,9 +30,10 @@ export const App = () => {
   //const type="Romantic";
   return (
    <>
- <MyProvider>
-<Home/>
- </MyProvider>
+    <MyProvider>
+      <Home/>
+      <About/>
+    </MyProvider>
   </>
   );
 };

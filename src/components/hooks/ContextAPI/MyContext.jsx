@@ -12,3 +12,10 @@ export const MyProvider = ({children}) => {
     </MyContext.Provider>
 
 }
+
+
+//Custome hooks
+ export const useMyContext = () => {
+    const contex = useMyContext(MyContext);
+    return contex;
+ }

@@ -4,8 +4,9 @@ import { createContext } from "react";
 export const MyContext = createContext();
 
 //2nd step
-const MyProvider = () => {
-    return <MyContext.Provider value={{}}>
+export const MyProvider = ({children}) => {
+    const myName ="Rashmi";
+    return <MyContext.Provider value={{myName}}>{children}
         
     </MyContext.Provider>
 

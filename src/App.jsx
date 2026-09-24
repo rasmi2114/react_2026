@@ -6,9 +6,17 @@
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
-import { About } from "./components/hooks/ContextAPI/about";
-import { Home } from "./components/hooks/ContextAPI/Home";
-import { MyProvider } from "./components/hooks/ContextAPI/MyContext";
+
+//context API
+// import { About } from "./components/hooks/ContextAPI/about";
+// import { Home } from "./components/hooks/ContextAPI/Home";
+// import { MyProvider } from "./components/hooks/ContextAPI/MyContext";
+
+
+// Dark mode 
+const theme = {};
+import { ThemeProvider } from "styled-components";
+import { DarkLight } from "./components/hooks/ContextAPI/DarkLight";
 
 
 // import './components/hooks/UseEffect/Pokemon.css';
@@ -30,10 +38,9 @@ export const App = () => {
   //const type="Romantic";
   return (
    <>
-    <MyProvider>
-      <Home/>
-      <About/>
-    </MyProvider>
+    <ThemeProvider theme={theme}>
+      <DarkLight/>
+    </ThemeProvider>
   </>
   );
 };

@@ -6,6 +6,8 @@
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
+import { ReducerComp } from "./components/hooks/UseReducer";
+
 
 //context API
 // import { About } from "./components/hooks/ContextAPI/about";
@@ -13,10 +15,8 @@
 // import { MyProvider } from "./components/hooks/ContextAPI/MyContext";
 
 
-// Dark mode 
-const theme = {};
-import { ThemeProvider } from "styled-components";
-import { DarkLight } from "./components/hooks/ContextAPI/DarkLight";
+// Dark mode
+// import { DarkLight, ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
 
 
 // import './components/hooks/UseEffect/Pokemon.css';
@@ -32,15 +32,16 @@ import { DarkLight } from "./components/hooks/ContextAPI/DarkLight";
 
 
 
-
-
 export const App = () => {
   //const type="Romantic";
   return (
    <>
-    <ThemeProvider theme={theme}>
+<ReducerComp/>
+
+   {/* contextApi component call */}
+    {/* <ThemeProvider>
       <DarkLight/>
-    </ThemeProvider>
+    </ThemeProvider> */}
   </>
   );
 };

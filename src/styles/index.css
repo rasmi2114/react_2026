@@ -85,6 +85,10 @@ body {
 
 /* } */ 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 h1,
 h2, h3,h4 {
   color: var(--heading-color);

@@ -6,7 +6,9 @@
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
-import { ReducerComp } from "./components/hooks/UseReducer";
+import { ReactMemo } from "./components/hooks/Memo/ReactMemo";
+
+
 
 
 //context API
@@ -36,7 +38,7 @@ export const App = () => {
   //const type="Romantic";
   return (
    <>
-<ReducerComp/>
+<ReactMemo/>
 
    {/* contextApi component call */}
     {/* <ThemeProvider>

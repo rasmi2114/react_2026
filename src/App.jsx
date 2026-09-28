@@ -1,12 +1,7 @@
-
-// import MyTodo from "./projects/myTodoApp/MyTodo";
-// import "./projects/myTodoApp/myTodo.css";
 // import { Todo } from "./projects/ToDoApp/Todo";
-// import "./components/hooks/ShortCircuit";
 // import ShortCircuit from "./components/hooks/ShortCircuit";
 // import "./projects/ToDoApp/todo.css";
 
-import { ReactMemo } from "./components/hooks/Memo/ReactMemo";
 
 //context API
 // import { About } from "./components/hooks/ContextAPI/about";
@@ -17,30 +12,47 @@ import { ReactMemo } from "./components/hooks/Memo/ReactMemo";
 // Dark mode
 // import { DarkLight, ThemeProvider } from "./components/hooks/ContextAPI/DarkLight";
 
-
-// import './components/hooks/UseEffect/Pokemon.css';
-// import { PokemonApp } from './projects/PokemonApp/PokemonApp';
-// import { Clock } from "./components/hooks/UseEffect/Clock";
-// import './components/hooks/UseEffect/useEffect.css';
-
-
 // import {Registration} from "./components/hooks/UseState/Registration";
 // import {LoginForm} from "./components/hooks/UseState/LoginForm";
 // import { ContactForm} from "./components/hooks/UseState/ContactForm";
 // import './components/hooks/UseState/index.css';
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { About } from "./routerpages/About";
+import { Home } from "./routerpages/Home";
+import { Movies } from "./routerpages/Movies";
+import { Contact } from "./routerpages/Contact";
+import AppLayout from "./components/layout/AppLayout";
+import { ErrorPages } from "./components/layout/ErrorPages";
 
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element:<AppLayout/>,
+      errorElement : <ErrorPages/>,
+      children: [
+        {
+        path: "/",
+        element: <Home />
+        },
+        {
+        path: "/About",
+        element: <About/>
+        },
+        {
+        path: "/Movies",
+        element: <Movies/>
+        },
+        {
+          path: "/Contact",
+          element: <Contact />
+        },
+      ],
+    },
+  ]);
 
-export const App = () => {
-  //const type="Romantic";
-  return (
-   <>
-<ReactMemo/>
-
-   {/* contextApi component call */}
-    {/* <ThemeProvider>
-      <DarkLight/>
-    </ThemeProvider> */}
-  </>
-  );
+  return <RouterProvider router={router} />;
 };
+
+export default App;

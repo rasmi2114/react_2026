@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.logo {
+  background-color: #f4f6f9;
+  padding: 14px 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+button {
+  background-color: #202124;
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  letter-spacing: 3px;
+  margin-right: 3rem;
+}
+
+.error-btn{
+  display: flex;
+  justify-content: center;
+}
+.btn-back {
+  border-radius: 100%;
+  padding: 2rem;
+  border-radius: 20px;
+  align-items: center;
+  color: bisque;
+  background-color:#202124;
+}

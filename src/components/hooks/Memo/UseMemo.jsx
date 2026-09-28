@@ -4,7 +4,7 @@ const ExpensiveComponent = () => {
   //   Expensive calculation function
   const sum = () => {
     console.log("Calculating sum...");
-    let i = 0;
+    let i;
     for (i = 0; i <= 1000000000; i++) {
       i = i + 1;
     }

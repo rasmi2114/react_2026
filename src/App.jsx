@@ -8,9 +8,6 @@
 
 import { ReactMemo } from "./components/hooks/Memo/ReactMemo";
 
-
-
-
 //context API
 // import { About } from "./components/hooks/ContextAPI/about";
 // import { Home } from "./components/hooks/ContextAPI/Home";

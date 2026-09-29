@@ -1,21 +1,69 @@
 import { NavLink } from "react-router-dom";
-import './layout.css/all.css';
 
 export const Header = () => {
-    return (
-    <nav className="navbar">
-      <div className="logo">Company Logo</div>
+  const getNavLinkStyle = ({ isActive }) => {
+    return {
+      color: isActive ? "green" : "black",
+    };
+  };
 
-      <div className="nav-links">
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/feature">Feature</NavLink>
-        <NavLink to="/user-examples">User Examples</NavLink>
-        <NavLink to="/pricing">Pricing</NavLink>
-        <NavLink to="/resources">Resources</NavLink>
-      </div>
+  return (
+    <>
+      <header className="section-navbar">
+        <div className="container">
+          <div className="navbar-brand">
+            <NavLink to="index">
+              <p>LOGO</p>
+            </NavLink>
+          </div>
 
-      <button>Cart</button>
-    </nav>
+          <nav className="navbar">
+            <ul>
+              <li className="nav-item">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/about"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "blue" : "black",
+                    };
+                  }}
+                >
+                  about
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="movies"
+                  className="nav-link"
+                  style={getNavLinkStyle}
+                >
+                  movies
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="contact"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  contact
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </>
   );
-
 };

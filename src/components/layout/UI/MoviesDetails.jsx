@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
-export const MoviesDetails = () =>{
-    const params = useParams();
-    console.log(params);
+export const MoviesDetails = () => {
+    const moviedata = useLoaderData();
+    
     return(
         <>
         <h1>Movies details</h1>

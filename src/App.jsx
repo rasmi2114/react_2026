@@ -50,6 +50,7 @@ const App = () => {
         {
         path: "/Movies/:moviesID",
         element: <MoviesDetails/>,
+        loader: getMoviesData,
         },
         {
           path: "/Contact",

@@ -4,7 +4,6 @@ import { Card } from "../components/layout/UI/Card";
 
 export const Movies = () => {
   const moviesData = useLoaderData();
-  console.log(moviesData);
 
   return (
     <ul className="container grid grid-four--cols">

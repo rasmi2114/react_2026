@@ -857,3 +857,29 @@ footer {
     padding: 6.4rem 0rem 2.4rem;
   }
 }
+
+button {
+  background-color: #202124;
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  letter-spacing: 3px;
+  margin-right: 3rem;
+}
+
+.error-btn{
+  display: flex;
+  justify-content: center;
+}
+.btn-back {
+  border-radius: 100%;
+  padding: 2rem;
+  border-radius: 20px;
+  align-items: center;
+  color: bisque;
+  background-color:#202124;
+}
+
+.ticket__content {
+  background-color: #202124;
+}

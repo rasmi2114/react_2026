@@ -1,6 +1,18 @@
 import { Form } from "react-router-dom";
 import "../components/layout/style/all.css";
 
+
+export const contactData = async ({request}) => {
+try {
+    const res = await request.formData();
+    const data = Object.fromEntries(res);
+    console.log(data);
+    return null;
+} catch (error) {
+    console.log(error.message);
+}
+};
+
 export const Contact = () => {
   return (
     <>
@@ -15,7 +27,7 @@ export const Contact = () => {
             <div className="contact-content">
               <Form method="POST" action="/contact">
                 <div className="grid grid-two-cols mb-3">
-                  <div>
+                  <div className="mb-3">
                     <label htmlFor="username">full name</label>
                     <input
                       type="text"
@@ -27,7 +39,7 @@ export const Contact = () => {
                     />
                   </div>
 
-                  <div>
+                  <div className="mb-3">
                     <label htmlFor="email">email address</label>
                     <input
                       type="email"
@@ -61,7 +73,7 @@ export const Contact = () => {
             <div className="contact-image">
               <figure>
                 <img
-                  src="/contact.png"
+                  src="images/contact-image.png"
                   alt="contact pic"
                   className="contact_image"
                 />

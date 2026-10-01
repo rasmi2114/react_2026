@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "./Card.css";
+import "../style/all.css";
 
 export const Card = ({ curMovie }) => {
   const { Poster, imdbID } = curMovie;

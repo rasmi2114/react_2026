@@ -21,7 +21,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { About } from "./routerpages/About";
 import { Home } from "./routerpages/Home";
 import { Movies } from "./routerpages/Movies";
-import { Contact } from "./routerpages/Contact";
+import { Contact, contactData } from "./routerpages/Contact";
 import AppLayout from "./components/layout/AppLayout";
 import { ErrorPages } from "./components/layout/ErrorPages";
 import { getMoviesData } from "./api/GetAPIData";
@@ -54,7 +54,8 @@ const App = () => {
         },
         {
           path: "/Contact",
-          element: <Contact />
+          element: <Contact />,
+          action: contactData,
         },
       ],
     },

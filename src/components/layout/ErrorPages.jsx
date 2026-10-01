@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import './layout.css/all.css'; 
+import "../layout/style/all.css"; 
 
 export const ErrorPages = () => {
     const navigate = useNavigate();

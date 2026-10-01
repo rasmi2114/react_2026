@@ -1,4 +1,4 @@
-import './layout.css/all.css';
+import "../layout/style/all.css";
 
 export const Loading = () => {
   return (

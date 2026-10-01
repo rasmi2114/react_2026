@@ -309,8 +309,9 @@ main .section-hero {
   color: #fff;
 }
 .section-hero img {
-  width: 100%;
+  width: 70%;
   height: auto;
+  margin-top: 10%;
   /* transform: scaleX(-1); */
 }
 .div-extra {
@@ -520,7 +521,7 @@ textarea {
 }
 
 .contact-image {
-  width: 10%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,6 +793,7 @@ footer {
   .section-hero .section-hero-image {
     display: grid;
     place-items: center;
+
   }
   .section-hero .section-hero-image figure {
     display: grid;

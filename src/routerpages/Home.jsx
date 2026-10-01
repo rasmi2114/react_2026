@@ -22,14 +22,12 @@ export const Home = () => {
               </NavLink>
             </div>
           </div>
-          {/* <div className="section-hero-image">
+          <div className="section-hero-image">
             <img
               src="./public/images/home-movies.png"
               alt="movies poster"
-              width="150"
-              height="150"
             />
-          </div> */}
+          </div>
         </div>
         <div className="custom-shape-divider-bottom-1696038172">
           <svg

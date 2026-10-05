@@ -37,10 +37,6 @@ export const Footer = () => {
             <br />
             arrivals, sales & promos!
           </p>
-          <div className="f-mail">
-            <input type="email" placeholder="Your Email" />
-            <i className="bx bx-envelope"></i>
-          </div>
           <hr />
         </div>
       </div>
